@@ -1,0 +1,22 @@
+{
+  "name": "react-new-api-examples",
+  "description": "this is example for study meeting.",
+  "version": "0.0.1",
+  "author": "takahiro-saeki",
+  "dependencies": {
+    "react": "^16.3.0-alpha.1",
+    "react-dom": "^16.3.0-alpha.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "https://github.com/takahiro-saeki/react-new-api-examples.git",
+  "scripts": {
+    "start": "parcel index.html"
+  }
+}

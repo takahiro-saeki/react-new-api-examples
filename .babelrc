@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "react",
+    ["env", {
+      "useBuiltIns": true,
+      "modules": false,
+      "loose": true,
+    }]
+  ],
+  "ignore": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./src/index.js","dynamic":true}],"generated":{"html":"<html>\n<head>\n  <title>React new API examples!</title>\n</head>\n<body>\n  <div>test</div>\n  <script src=\"/dist/cc389af5af7a46395e024878ccdba906.js\"></script>\n</body>\n</html>"},"hash":"9f58f9ce658f44056060e752658a898b","cacheData":{}}
