@@ -19,6 +19,7 @@
     "transform-decorators-legacy",
     "transform-function-bind",
     "transform-class-properties",
-    "transform-es2015-modules-commonjs"
+    "transform-es2015-modules-commonjs",
+    "transform-object-rest-spread"
   ]
 }

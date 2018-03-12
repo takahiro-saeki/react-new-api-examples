@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import Counter from '../../Components/Counter';
 
-//{({count}) => <div>{count}</div>}
+const ChildRender = () => (
+  <Counter>
+    {({count, increment, decrement, incrementAsync, incrementAsyncTen}) => (
+      <section>
+        <div>count: {count}</div>
+        <button onClick={increment}>+</button>
+        <button onClick={decrement}>-</button>
+        <button onClick={incrementAsync}>incrementAsync</button>
+        <button onClick={incrementAsyncTen}>incrementAsyncTen</button>
+      </section>
+    )}
+  </Counter>
+)
 
-export default class ChildRender extends Component {
-  constructor(props) {
-    super(props);
-  }
-  
-  render() {
-    return (
-      <Counter>
-        <div>test</div>
-      </Counter>
-    )
-  }
-}
+export default ChildRender;
