@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Counter from '../../Components/Counter';
+
+//{({count}) => <div>{count}</div>}
 
 export default class ChildRender extends Component {
   constructor(props) {
@@ -7,7 +10,9 @@ export default class ChildRender extends Component {
   
   render() {
     return (
-      <div>test</div>
+      <Counter>
+        <div>test</div>
+      </Counter>
     )
   }
 }

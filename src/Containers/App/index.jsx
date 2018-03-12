@@ -7,7 +7,7 @@ const App = () => (
     render={({list, isLoading}) => 
       isLoading ? <div>now loading...</div> : 
       <div onClick={() => console.log({list, isLoading})}>test</div>
-      }/>
+    }/>
 )
 
 export default App;

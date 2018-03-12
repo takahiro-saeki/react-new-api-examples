@@ -12,4 +12,4 @@ export default class Counter extends Component {
     const { children } = this.props;
     return cloneElement(children, this.state)
   }
-} 
+}
