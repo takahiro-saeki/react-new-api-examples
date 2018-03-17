@@ -8,21 +8,21 @@ export default class List extends Component {
       isLoading: false
     }
   }
-  
-  _fetch = async () => {
-    const res = await fetch(this.props.url);
+
+  fetchApi = async () => {
+    const res = await fetch(this.props.apiPath);
     const json = await res.json();
-    
+
     await this.setState({
       list: json,
       isLoading: false,
     });
   }
-  
+
   componentDidMount() {
-    this.setState({ isLoading: true }, this._fetch);
+    this.setState({ isLoading: true }, this.fetchApi);
   }
-  
+
   render() {
     return this.props.render(this.state)
   }
