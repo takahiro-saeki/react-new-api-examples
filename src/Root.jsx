@@ -5,6 +5,7 @@ import ChildRender from './Containers/ChildRender';
 import PortalExample from './Containers/PortalExample';
 import RefsExample from './Containers/RefsExample';
 import ContextExample from './Containers/ContextExample';
+import TodoExample from './Containers/TodoExample';
 
 document.body.style.margin = 0;
 
@@ -17,6 +18,7 @@ const Root = () => (
         <Route path="/portal" component={PortalExample} />
         <Route path="/refs" component={RefsExample} />
         <Route path="/context-api" component={ContextExample} />
+        <Route path="/todo" component={TodoExample} />
       </Switch>
     </div>
   </Router>
