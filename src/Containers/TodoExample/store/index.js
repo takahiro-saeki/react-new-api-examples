@@ -1,8 +1,8 @@
 import React, { createContext } from 'react';
 import list from '../list';
 
-const store = createContext({
+const Store = createContext({
   data: list
 });
 
-export default store
+export default Store
