@@ -1,10 +1,13 @@
 import React from 'react';
 import Store from '../Store';
 
-const withTheme = Component => props => (
-  <Store.Consumer>
-    {store => <Component {...props} store={store} />}
-  </Store.Consumer>
-)
+const withTheme = dispatch => Component => props => {
+  console.log('dispatch', dispatch)
+  return (
+    <Store.Consumer>
+      {store => <Component {...props} {...dispatch} store={store} />}
+    </Store.Consumer>
+  )
+}
 
 export default withTheme;

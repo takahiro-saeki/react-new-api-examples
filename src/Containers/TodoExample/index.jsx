@@ -9,7 +9,8 @@ export default class TodoExample extends Component {
     super(props);
     this.state = {
       data: list,
-      add: this.add
+      add: this.add,
+      sample: []
     }
   }
   
@@ -18,8 +19,19 @@ export default class TodoExample extends Component {
       data: [...state.data, {id: v4(), title: 'test data'}]
     }))
   }
+  
+  stateChange = (param) => {
+    this.setState(state => ({...state, ...param(state)}))
+    return this
+  }
+  
+  sample = () => {
+    const setData = {sample: 'test!'}
+    this.stateChange()
+  }
 
   render() {
+    this.sample()
     return (
       <div>
         <header>Todo Example</header>
