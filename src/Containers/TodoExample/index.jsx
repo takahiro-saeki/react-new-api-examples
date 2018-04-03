@@ -11,7 +11,8 @@ export default class TodoExample extends Component {
     this.state = {
       data: list,
       add: this.add,
-      deletePost: this.deletePost
+      deletePost: this.deletePost,
+      checkPost: this.checkPost
     }
   }
   
@@ -27,7 +28,17 @@ export default class TodoExample extends Component {
   }
   
   checkPost = id => {
-    console.log(id)
+    const flag = this.state.data.map(item => {
+      if(item.id === id) {
+        const param = {
+          ...item,
+          isChecked: !item.isChecked
+        }
+        return param
+      }
+      return item
+    });
+    this.setState({data: flag})
   }
   
   stateChange = (param = {}) => this.setState(state => ({...state, ...param}))

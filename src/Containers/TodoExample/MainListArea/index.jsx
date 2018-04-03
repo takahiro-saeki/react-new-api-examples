@@ -15,6 +15,7 @@ const MainListArea = () => (
             key={`list-${item.id}`} 
             id={item.id} 
             title={item.title}
+            isChecked={item.isChecked}
           />
         ))}
       </ul>

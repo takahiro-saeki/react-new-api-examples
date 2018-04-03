@@ -2,12 +2,19 @@ import React from 'react';
 import Store from '../../Store';
 import { CheckArea, DeleteArea, Container } from './style';
 
-const ChildList = ({title, id}) => (
+const checkStyle = {
+  textDecoration: 'line-through',
+  color: '#CCC'
+}
+
+const ChildList = ({title, id, isChecked}) => (
   <Store.Consumer>
     {todo => (
       <Container>
-        <CheckArea>check</CheckArea>
-        <span>{title}</span>
+        <CheckArea 
+          onClick={() => todo.checkPost(id)}
+        >check</CheckArea>
+        <span style={isChecked ? checkStyle : {}}>{title}</span>
         <DeleteArea onClick={() => todo.deletePost(id)}>delete</DeleteArea>
       </Container>
     )}

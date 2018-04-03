@@ -7,7 +7,7 @@ const OtherList = ({store, param, second}) => (
 
 const mapStateToProps = state => {
   return {
-    second: 'second'
+    second: 'second!'
   }
 }
 

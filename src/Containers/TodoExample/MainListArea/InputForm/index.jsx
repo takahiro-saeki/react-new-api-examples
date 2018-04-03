@@ -24,7 +24,7 @@ export default class InputForm extends Component {
     const { value } = this.state;
     
     if (e.which === 13) {
-      add({id: v4(), title: value})
+      add({id: v4(), title: value, isChecked: false})
       this.setState({value: ''})
     }
   }
