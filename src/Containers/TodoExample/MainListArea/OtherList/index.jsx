@@ -1,8 +1,14 @@
 import React from 'react';
 import withTheme from '../../utils/withTheme';
 
-const OtherList = ({store, param}) => (
-  <li onClick={store.add}>other list: {param}</li>
+const OtherList = ({store, param, second}) => (
+  <li onClick={store.add}>other list: {param}/ second data is {second}</li>
 )
 
-export default withTheme({param: 'test!'})(OtherList);
+const mapStateToProps = state => {
+  return {
+    second: state.data[1].title
+  }
+}
+
+export default withTheme(mapStateToProps)(OtherList);
