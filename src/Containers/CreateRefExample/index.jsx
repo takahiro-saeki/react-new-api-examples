@@ -1,9 +1,5 @@
 import { Component, createRef } from 'react';
 
-const TestCom = () => (
-  <div>test</div>
-)
-
 export default class CreateRefExample extends Component {
   constructor(props) {
     super(props)
