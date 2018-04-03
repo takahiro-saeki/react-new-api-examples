@@ -5,6 +5,7 @@ export const CheckArea = styled.span`
   color: #FFF;
   padding: .5rem;
   margin-right: 1rem;
+  border-radius: .5rem;
 `
 
 export const DeleteArea = styled.span`
@@ -12,4 +13,9 @@ export const DeleteArea = styled.span`
   color: #FFF;
   padding: .5rem;
   margin-left: 1rem;
+  border-radius: .5rem;
+`
+
+export const Container = styled.li`
+  padding: .5rem;
 `

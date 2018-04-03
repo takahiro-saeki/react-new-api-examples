@@ -10,7 +10,13 @@ const MainListArea = () => (
       <ul>
         <InputForm />
         <OtherList />
-        {todo.data.map(item => <ChildList key={`list-${item.id}`} title={item.title}/>)}
+        {todo.data.map(item => (
+          <ChildList 
+            key={`list-${item.id}`} 
+            id={item.id} 
+            title={item.title}
+          />
+        ))}
       </ul>
     )}
   </Store.Consumer>
